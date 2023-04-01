@@ -838,7 +838,6 @@ textarea.form-control {
   text-align: center;
   display: inline-block;
 }
-
 .footer-section {
   background: #1a1a1a;
   color: #fff;
@@ -2053,6 +2052,19 @@ textarea.form-control {
   font-weight: bolder !important;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 
 /* Header search */
 
@@ -2108,3 +2120,4 @@ textarea.form-control {
 .overflow__x__scroll::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
+
