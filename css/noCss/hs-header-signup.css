@@ -1,0 +1,1540 @@
+.or-devider {
+    position: relative;
+    margin: 15px 0
+}
+
+.or-devider:after,.or-devider:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 12px;
+    height: 1px;
+    background-color: #ddd
+}
+
+.or-devider:before {
+    left: 1px
+}
+
+.or-devider span {
+    padding: 6px;
+    border-radius: 100%;
+    background-color: #dadada;
+    font-size: 10px;
+    color: #fff;
+    position: relative
+}
+
+.login-signup {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+    opacity: 1;
+    color: #2e2e2e
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup.overflow {
+        overflow-y:auto!important
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .login-signup {
+        overflow-y:auto
+    }
+}
+
+.login-signup .login-signup__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-color: #000;
+    opacity: .5
+}
+
+.login-signup .login-signup__modal {
+    max-height: 550px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 670px;
+    margin: auto;
+    left: 0;
+    max-width: 670px;
+    right: 0
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal {
+        max-height:calc(100vh + 125px);
+        height: calc(100vh + 125px);
+        min-height: 600px;
+        margin: 0;
+        max-width: 100vw;
+        width: 100vw
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog {
+    position: relative;
+    height: 100%
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-close-icon {
+    right: 12px;
+    top: 12px;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-close-icon {
+        top:10px;
+        right: 5px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-close-icon svg {
+        height:25px!important;
+        width: 25px!important
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content {
+        -webkit-box-orient:vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left {
+    width: 40%;
+    min-height: 125px;
+    background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left {
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-img {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-left: 10%
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-img {
+        -ms-flex-item-align:end;
+        align-self: flex-end;
+        position: relative;
+        margin-left: 0
+    }
+
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-img.pnmInter,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-img.pnmIntra {
+        top: 15px
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-img img {
+    height: 100px;
+    min-height: 84px;
+    width: 100px
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-img img {
+        height:80px;
+        width: 80px
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content {
+    margin-top: 10px;
+    max-width: 80%;
+    width: 80%
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content {
+        max-width:60%;
+        min-height: 115px;
+        padding-top: 25px
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content .left-content-heading {
+    margin-bottom: 8px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content b {
+    font-weight: 600
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content .sub-title {
+    color: #2e2e2e
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content .sub-title {
+        display:none
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content ul.checklist {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #2e2e2e
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content ul.checklist li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    color: #2e2e2e;
+    opacity: .8
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content ul.checklist li:before {
+    content: "";
+    position: absolute;
+    border-color: #7b7b7b;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 5px;
+    left: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    height: 10px;
+    width: 5px
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content ul.checklist li {
+        padding-left:0;
+        white-space: normal;
+        display: inline;
+        padding-right: 2px
+    }
+
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-left .login-signup__modal-content-left-content ul.checklist li:before {
+        display: none
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right {
+    padding: 20px;
+    margin-top: 30px;
+    width: 60%;
+    height: calc(100% - 30px);
+    position: relative
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right {
+        margin-top:0;
+        width: 100%;
+        height: auto;
+        min-height: 100vh
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup-modal-footer {
+    position: absolute;
+    bottom: 30px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup-modal-footer span {
+    color: #000;
+    font-weight: 600
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup-modal-footer span:hover {
+    text-decoration: underline
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup-modal-footer {
+        position:fixed;
+        bottom: 10px;
+        font-size: 10px
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup-modal-footer .mail-label-block {
+    color: #000;
+    font-weight: 600;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form {
+    padding: 0 20px;
+    position: relative;
+    height: calc(100% - 30px);
+    overflow-y: auto
+}
+
+@media only screen and (max-width: 767px) {
+    .login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form {
+        padding:0;
+        height: calc(100% + 36px);
+        overflow-y: hidden
+    }
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form__top-label {
+    line-height: 23px;
+    margin-bottom: 20px;
+    color: #2e2e2e
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group {
+    position: relative
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .help-block {
+    color: #d50000
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step2,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step3,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step4 {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .6s ease-out,max-height .3s ease-out;
+    transition: opacity .6s ease-out,max-height .3s ease-out
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step2.show,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step3.show,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step4.show {
+    margin-top: 25px;
+    max-height: 100%;
+    opacity: 1
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step2.show.whatsAppNotOpen,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step3.show.whatsAppNotOpen,.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step4.show.whatsAppNotOpen {
+    margin-top: 0;
+    margin-bottom: 25px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .email-otp-input {
+    margin-top: 30px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form-authentication-input {
+    margin-top: 20px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form-authentication-input #login-signup-form__password-input {
+    border-radius: 4px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number-error {
+    top: -40px;
+    position: relative
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number-error.whatsAppOpen {
+    top: 0
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .intl-tel-input .selected-flag {
+    z-index: 2
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .login-signup-form__phone-number-input {
+    border-radius: 4px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    -webkit-transition: border-bottom-left-radius .3s ease-out,border-bottom-right-radius .3s ease-out;
+    transition: border-bottom-left-radius .3s ease-out,border-bottom-right-radius .3s ease-out
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .login-signup-form__phone-number-input.error {
+    border-color: #d50000
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .login-signup-form__phone-number-input.whatsAppOpen {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .login-signup-form__phone-number-read-only {
+    background: #f8f8f8;
+    height: 40px;
+    border-radius: 4px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .login-signup-form__phone-number-read-only.whatsAppOpen {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__phone-number .login-signup-form__phone-number-read-only .login-signup-form__phone-number-read-only-action {
+    cursor: pointer;
+    color: #009587;
+    font-size: 12px;
+    text-decoration: underline
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__whatsApp-notification {
+    background: #f8f8f8;
+    height: 40px;
+    border-radius: 4px;
+    position: relative;
+    top: -40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: .9;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: top .3s ease-out,opacity .3s ease-out,z-index .3s ease-out;
+    transition: top .3s ease-out,opacity .3s ease-out,z-index .3s ease-out;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .login-signup-form__whatsApp-notification.whatsAppOpen {
+    z-index: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    top: 0;
+    opacity: 1
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step5 .phone-verification-content {
+    margin: 20px 0
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step5 .update-phone-cta-container {
+    margin-top: 20px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step5 .update-phone-cta-container .text-center {
+    margin-top: 10px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group.step5 .update-phone-cta-container .text-center .update-phone-go-back {
+    cursor: pointer;
+    color: #009587;
+    text-decoration: underline
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-group .otp-email-toast-message-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 6%
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form__email-read-only {
+    background: #f8f8f8;
+    height: 40px;
+    border-radius: 4px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form__email-read-only .login-signup-form__email-read-only-action {
+    cursor: pointer;
+    color: #009587;
+    font-size: 12px;
+    text-decoration: underline
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form__email .email-otp-trigger {
+    color: #009587;
+    cursor: pointer
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form__email .email-otp-trigger:hover {
+    text-decoration: underline
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form__email .email-exist-error-message {
+    background: #f8f8f8;
+    min-height: 52px;
+    border-radius: 4px;
+    padding: 11px 25px 11px 15px;
+    color: #6c6c6c;
+    font-size: 12px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button {
+    position: relative;
+    top: -10px;
+    -webkit-transition: top .3s ease-out;
+    transition: top .3s ease-out;
+    height: 70px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button.whatsAppOpen {
+    top: 30px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button.whatsAppOpen.step-2 {
+    top: 15px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button .login-signup-create-account-text {
+    text-align: center;
+    margin-top: 6px
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button .login-signup-create-account-text span {
+    font-weight: 600;
+    cursor: pointer
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button .login-signup-create-account-text span:hover {
+    text-decoration: underline
+}
+
+.login-signup .login-signup__modal .login-signup__modal-dialog .login-signup__modal-content .login-signup__modal-content-right .login-signup__modal-form .login-signup-form-submit-button button {
+    width: 100%;
+    border-radius: 4px
+}
+
+.nb-modal.modal.email-otp-popup-message,.nb-modal.modal.email-otp-popup-message .otp-email-popup-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.nb-modal.modal.email-otp-popup-message .otp-email-popup-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px
+}
+
+.nb-modal.modal.email-otp-popup-message .otp-email-popup-block .otp-email-label {
+    font-weight: 600;
+    padding: 6% 11%;
+    font-size: 18px;
+    text-align: center
+}
+
+.nb-modal.modal.email-otp-popup-message .otp-email-popup-block .confirm-label {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    color: #009587;
+    cursor: pointer
+}
+
+.nb-modal.modal.email-otp-popup-message div.modal-content {
+    height: auto;
+    border-radius: 21px;
+    width: 83%;
+    margin: auto
+}
+
+.custom-hs {
+    height: 50px!important;
+    font-size: 18px!important
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.0745098);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.0745098);
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.form-group.has-error {
+    padding-bottom: 20px
+}
+
+.form-group .control-label {
+    font-weight: 600;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px
+}
+
+.form-group .left-input-image {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 37px;
+    left: 13px;
+    z-index: 1
+}
+
+.form-group .left-input-icon {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    z-index: 1
+}
+
+.form-group .left-input-icon svg {
+    width: 22px;
+    height: 22px
+}
+
+.form-group .right-input-image {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 37px;
+    right: 13px;
+    z-index: 1
+}
+
+.form-group .right-input-icon {
+    position: absolute;
+    top: 35px;
+    right: 13px;
+    z-index: 1
+}
+
+.form-group .right-input-icon svg {
+    width: 15px;
+    height: 15px
+}
+
+.form-group .left-input-text {
+    position: absolute;
+    top: 34px;
+    left: 13px;
+    z-index: 1
+}
+
+.form-group .right-input-text {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    z-index: 1
+}
+
+.form-group .form-control {
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 8px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    word-break: normal
+}
+
+.form-group .form-control:focus {
+    outline: none;
+    border: 1px solid #787878;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+    color: #8a8a8a;
+    opacity: 1
+}
+
+.form-group .form-control::-moz-placeholder {
+    color: #8a8a8a;
+    opacity: 1
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    opacity: 1
+}
+
+.form-group .form-control::-ms-input-placeholder {
+    opacity: 1
+}
+
+.form-group .form-control::placeholder {
+    color: #8a8a8a;
+    opacity: 1
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    color: #8a8a8a
+}
+
+.form-group .form-control::-ms-input-placeholder {
+    color: #8a8a8a
+}
+
+.form-group .input-clear {
+    color: #000;
+    cursor: pointer
+}
+
+.form-group .input-clear:hover {
+    color: #009587
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100%
+}
+
+.form-group input[type=number] {
+    -moz-appearance: textfield
+}
+
+.form-group input[type=number]::-webkit-inner-spin-button,.form-group input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.form-group.has-error .control-label {
+    color: #d50000
+}
+
+.form-group.has-error .form-control {
+    border: 1px solid #d50000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.form-group.has-error .form-control:focus {
+    border-color: #d50000;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #d50000;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #d50000
+}
+
+.form-group.has-error .help-block {
+    position: absolute;
+    color: #d50000;
+    margin-bottom: 0;
+    display: block;
+    margin-top: 5px
+}
+
+.form-group.has-error .checkbox,.form-group.has-error .checkbox-inline,.form-group.has-error .control-label,.form-group.has-error .help-block,.form-group.has-error .radio,.form-group.has-error .radio-inline {
+    color: #d50000
+}
+
+.form-group.location-icon .form-control {
+    padding-left: 35px;
+    font-size: 16px
+}
+
+.form-group.left-icon-form-group .form-control {
+    padding-left: 40px
+}
+
+.form-group.left-text-form-group .form-control {
+    padding-left: 55px
+}
+
+.form-group.right-text-form-group .form-control {
+    padding-right: 60px
+}
+
+.form-group.right-icon-form-group .form-control {
+    padding-right: 30px
+}
+
+.form-group.form-group-lg .form-control {
+    height: 50px;
+    font-size: 16px
+}
+
+.form-group.form-group-lg .left-input-image {
+    width: 20px;
+    height: 20px;
+    top: 40px;
+    left: 11px
+}
+
+.form-group.form-group-lg .left-input-icon {
+    top: 38px;
+    left: 11px
+}
+
+.form-group.form-group-lg .left-input-icon svg {
+    width: 22px;
+    height: 22px
+}
+
+.form-group.form-group-lg .right-input-image {
+    width: 20px;
+    height: 20px;
+    top: 40px;
+    right: 11px
+}
+
+.form-group.form-group-lg .right-input-icon {
+    top: 38px;
+    right: 11px
+}
+
+.form-group.form-group-lg .right-input-icon svg {
+    width: 20px;
+    height: 20px
+}
+
+.form-group.form-group-lg .left-input-text,.form-group.form-group-lg .right-input-text {
+    top: 37px;
+    font-size: 16px
+}
+
+.form-group.form-group-lg.left-text-form-group .form-control {
+    padding-left: 60px
+}
+
+.form-group.no-label .left-location-image {
+    position: absolute;
+    height: 32px;
+    width: 36px;
+    top: 9px
+}
+
+.form-group.no-label .left-input-image {
+    top: 16px
+}
+
+.form-group.no-label .right-input-icon,.form-group.no-label .right-input-image {
+    top: 9px
+}
+
+.form-group.no-label .custom-hs-right-icon {
+    top: 14px!important
+}
+
+.form-group.no-label .left-input-icon {
+    top: 9px
+}
+
+.form-group.no-label .left-input-text,.form-group.no-label .right-input-text {
+    top: 11px
+}
+
+.form-group.no-label.form-group-lg .right-input-icon,.form-group.no-label.form-group-lg .right-input-image {
+    top: 14px
+}
+
+.tooltip-input .tooltip-trigger-text {
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 0
+}
+
+.nb-switch {
+    cursor: pointer;
+    display: inline-block
+}
+
+.nb-switch-toggle {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 40px;
+    height: 22px;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transition: background .25s;
+    transition: background .25s
+}
+
+.nb-switch-toggle:after,.nb-switch-toggle:before {
+    content: ""
+}
+
+.nb-switch-toggle:before {
+    display: block;
+    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff));
+    background: linear-gradient(180deg,#fff 0,#fff);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    -webkit-transition: left .25s;
+    transition: left .25s
+}
+
+.nb-switch-toggle.xs {
+    width: 28px;
+    height: 16px
+}
+
+.nb-switch-toggle.xs:before {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 2px
+}
+
+.nb-switch-toggle.lg {
+    width: 58px;
+    height: 32px
+}
+
+.nb-switch-toggle.lg:before {
+    width: 24px;
+    height: 24px
+}
+
+.nb__3R-A1:hover .nb-switch-toggle:before {
+    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff));
+    background: linear-gradient(180deg,#fff 0,#fff)
+}
+
+.nb-switch-checkbox:checked+.nb-switch-toggle {
+    background: #009587
+}
+
+.nb-switch-checkbox:checked+.nb-switch-toggle:before {
+    left: 21px
+}
+
+.nb-switch-checkbox:checked+.nb-switch-toggle.xs:before {
+    left: 13px
+}
+
+.nb-switch-checkbox:checked+.nb-switch-toggle.lg:before {
+    left: 30px
+}
+
+.nb-switch-checkbox {
+    position: absolute;
+    visibility: hidden
+}
+
+.nb-switch-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px
+}
+
+@-webkit-keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+.busy-holder.backdrop {
+    background: rgba(0,0,0,.85);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999
+}
+
+.busy-holder .busy {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 60px);
+    z-index: 9999;
+    right: 0;
+    text-align: center
+}
+
+.busy-holder .busy img {
+    -webkit-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite
+}
+
+.busy-holder .busy .loading-text {
+    color: #fff;
+    margin: 10px auto;
+    font-weight: 300;
+    font-size: 16px
+}
+
+.radio {
+    position: relative;
+    display: block;
+    margin-top: 10px
+}
+
+.radio,.radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer
+}
+
+.radio label {
+    display: inline-block;
+    max-width: 100%
+}
+
+.nb-radio input[type=radio] {
+    -webkit-appearance: none;
+    padding: 6px;
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    margin-top: 2px
+}
+
+.nb-radio input[type=radio]:hover {
+    cursor: pointer;
+    border: 2px solid #787878
+}
+
+.nb-radio input[type=radio]:focus {
+    outline: none
+}
+
+.nb-radio input[type=radio]:checked {
+    outline: none;
+    border: 2px solid #009587
+}
+
+.nb-radio input[type=radio]:checked:before {
+    content: "";
+    position: absolute;
+    background: #009587;
+    opacity: 1;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px
+}
+
+.nb-radio.radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.nb-radio.radio-inline input[type=radio] {
+    position: absolute;
+    margin-left: -20px
+}
+
+.nb-radio.radio-inline:not(:last-child) {
+    margin-right: 15px
+}
+
+.nb-radio.has-error {
+    color: #d50000
+}
+
+.nb-radio.has-error input[type=radio] {
+    border-color: #d50000
+}
+
+.nb-radio.has-error input[type=radio]:hover {
+    border: 2px solid #d50000
+}
+
+.nb-radio.has-error.radio-inline label,.nb-radio.has-error.radio label {
+    color: #d50000
+}
+
+.nb-radio.read-only {
+    cursor: default;
+    pointer-events: none
+}
+
+.nb-radio.disabled {
+    color: #ccc
+}
+
+.nb-radio.disabled input[type=radio] {
+    border-color: #ebebeb;
+    pointer-events: none
+}
+
+.nb-radio.disabled input[type=radio]:hover {
+    cursor: not-allowed;
+    border: 2px solid #ebebeb
+}
+
+.nb__kV6hd {
+    overflow-x: auto
+}
+
+.nb__kV6hd .nb-otp__input-label {
+    margin-bottom: 10px
+}
+
+.nb__kV6hd.nb__2AnaN input {
+    width: 100%;
+    text-align: left;
+    font-size: 16px
+}
+
+.nb__kV6hd input {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    width: 36px;
+    min-width: 25px;
+    font-weight: 600;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center
+}
+
+.nb__kV6hd input:focus {
+    outline: none
+}
+
+.nb__kV6hd input.nb__3n_u- {
+    border-color: #d50000
+}
+
+.nb__kV6hd input[type=number] {
+    -moz-appearance: textfield
+}
+
+.nb__kV6hd input[type=number]::-webkit-inner-spin-button,.nb__kV6hd input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.nb__kV6hd .nb__G_7wy {
+    color: #009587;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    cursor: pointer;
+    float: right
+}
+
+.nb__kV6hd .nb__1ZaHg {
+    padding-top: 10px;
+    padding-right: 15px
+}
+
+.nb__kV6hd .nb__VGsdd {
+    color: #009587;
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 83px)
+}
+
+.nb__kV6hd .nb__VGsdd .nb__1ZaHg {
+    color: #2e2e2e
+}
+
+.nb__kV6hd .nb__1Qij4 {
+    float: left
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.modal-backdrop {
+    background-color: #000;
+    opacity: .5
+}
+
+.modal-backdrop,.nb-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.nb-modal {
+    font-size: 14px;
+    z-index: 1050;
+    margin: auto;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 1;
+    -webkit-transition: top .3s ease-in-out,right .3s ease-in-out,bottom .3s ease-in-out,left .3s ease-in-out;
+    transition: top .3s ease-in-out,right .3s ease-in-out,bottom .3s ease-in-out,left .3s ease-in-out
+}
+
+.nb-modal.modal {
+    display: block
+}
+
+@media (min-width: 768px) {
+    .nb-modal.modal {
+        overflow:auto;
+        width: auto;
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+.nb-modal .modal-dialog {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    position: relative;
+    width: auto;
+    margin: 10px;
+    z-index: 1050
+}
+
+@media (min-width: 768px) {
+    .nb-modal .modal-dialog {
+        width:600px;
+        margin: 30px auto
+    }
+}
+
+@media (min-width: 992px) {
+    .nb-modal .modal-large,.nb-modal .modal-lg {
+        width:900px
+    }
+}
+
+@media (min-width: 768px) {
+    .nb-modal .modal-sm,.nb-modal .modal-small {
+        width:300px
+    }
+}
+
+.nb-modal .modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.160784);
+    box-shadow: 0 3px 9px rgba(0,0,0,.160784)
+}
+
+.nb-modal .modal-body {
+    position: relative
+}
+
+.nb-modal .overflow-body {
+    overflow: auto
+}
+
+.nb-modal .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    display: table;
+    content: " ";
+    width: 100%
+}
+
+.nb-modal .modal-dialog {
+    margin-top: 2vh
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-dialog {
+        margin:0
+    }
+}
+
+.nb-modal .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-content {
+        height:100vh
+    }
+}
+
+.nb-modal .modal-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-body {
+        overflow-y:scroll;
+        height: calc(100% - 71px)
+    }
+}
+
+.nb-modal .modal-body .popup-bodyPNM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    height: 400px;
+    padding: 20px
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-body .popup-bodyPNM {
+        height:100vh;
+        width: 100vw
+    }
+}
+
+.nb-modal .modal-body .popup-headPNM {
+    margin-top: 28px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #222
+}
+
+.nb-modal .modal-body .popup-textPNM {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 20px
+}
+
+.nb-modal .modal-body .overflow-body {
+    overflow: auto
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-body .container {
+        margin:0;
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-body-overflow-none {
+        overflow-y:unset
+    }
+}
+
+.nb-modal .modal-footer {
+    background-color: #fff;
+    position: relative;
+    padding: 15px 20px 15px 15px
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-footer {
+        -webkit-box-shadow:0 0 15px #ccc;
+        box-shadow: 0 0 15px #ccc;
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        right: 0
+    }
+}
+
+.nb-modal .modal-footer .close-container {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 7px
+}
+
+@media only screen and (max-width: 767px) {
+    .nb-modal .modal-footer .close-container {
+        margin-top:8px;
+        float: left
+    }
+}
+
+.nb-modal .modal-footer .close-container .arrow-back {
+    display: inline-block;
+    margin-top: 10px
+}
+
+.nb-modal .modal-footer .close-container .arrow-icon {
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+    color: #999
+}
+
+.nb-modal .modal-footer .close-container .back-link {
+    color: #999;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px
+}
+
+.nb-modal .modal-footer .next-button {
+    float: right
+}
