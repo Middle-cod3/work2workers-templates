@@ -1,0 +1,48 @@
+/* Mobile screen */
+@media only screen and (max-width: 767px) {
+    .mn__width__100{
+        min-width: 100px !important;
+    }
+    .img__h__w__100{
+        height: 100px;
+        width: 100px;
+    }
+    .mn__width__170{
+        min-width: 170px !important;
+    }
+   
+    
+}
+/* Tablet Screen */
+@media screen and (min-width: 767.10px) and (max-width: 991.98px) { 
+
+    .mn__width__100{
+        min-width: 200px !important;
+    }
+    .img__h__w__100{
+        height: 200px;
+        width: 200px;
+    }
+    .mn__width__170{
+        min-width: 270px !important;
+    }
+   
+}
+/* Desktop Screen */
+/* @media screen and (min-width: 992px) and (max-width: 1024.98px) { 
+    .mn__width__100{
+        min-width: 500px !important;
+    }
+} */
+@media screen and (min-width: 1024.98px) { 
+    .mn__width__100{
+        min-width: 300px !important;
+    }
+    .img__h__w__100{
+        height: 300px;
+        width: 300px;
+    }
+    .mn__width__170{
+        min-width: 370px !important;
+    }
+}

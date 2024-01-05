@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Work 2 Worker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/extra.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/footer-menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.17.0/feather.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- New mobile menu start-->
+    <nav class="nav">
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">dashboard</i>
+            <span class="nav__text">Dashboard</span>
+        </a>
+        <a href="#" class="nav__link nav__link--active">
+            <i class="material-icons nav__icon">person</i>
+            <span class="nav__text">Profile</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">devices</i>
+            <span class="nav__text">Devices</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">lock</i>
+            <span class="nav__text">Privacy</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">settings</i>
+            <span class="nav__text">Settings</span>
+        </a>
+    </nav>
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Speaker &amp; Writer</a>
+                    </li>
+                    <li>
+                        <a href="#">Work</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+   
+    <!-- New mobile menu end-->
+
+    <!-- Mobile header start -->
+    <!-- <div class="sc-bottom-bar d-sm-block d-lg-none d-md-none">
+    <a class="sc-menu-item sc-current" onclick="gotoHome()">
+      <i class="fas fa-home"></i>
+    </a>
+    <a class="sc-menu-item" onclick="gotoCustomer()">
+      <i class="fas fa-key"></i>
+    </a>
+    <a class="sc-menu-item" onclick="gotoWorker()">
+      <i class="fas fa-user"></i>
+    </a>
+      <a class="sc-nav-indicator" >
+      </a>
+      <a class="sc-menu-item" onclick="gotoContact()">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div> -->
+    <!-- Mobile header end -->
+
+    <!-- Header and navbar start -->
+    <header class="site-header js-site-header ">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-6 col-lg-4 site-logo site-lef d-sm-none d-lg-block d-md-none" data-aos="fade">
+                    <a href="index.html"><img src="/images/lgo.png" alt="logo" width="120"></a>
+                </div>
+                <div class="col-6 col-lg-8 site-righ d-sm-none d-lg-block d-md-none" data-aos="fade-up">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#"><u>Worker Login/Customer
+                                                Login</u></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header and navbar end -->
+
+
+    <!-- Home image start -->
+    <section class="site-hero overlay d-sm-none d-lg-block d-md-none" style="background-image: url(images/home-bg.jpg)"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row site-hero-inner justify-content-center align-items-center">
+                <div class="col-md-10 text-center" data-aos="fade-up">
+                    <span class="custom-caption text-uppercase text-white d-block mb-3">Welcome To 5 <span
+                            class="fa fa-star text-primary"></span> Home
+                        service</span>
+                    <h1 class="heading">Home service, on demand</h1>
+                </div>
+            </div>
+    </section>
+    <!-- Home image end -->
+
+    <!-- Search Area for Desktop start -->
+    <section class="section bg-lit search__area__over d-sm-none d-lg-block d-md-none"
+        style="padding-top: 1px;  padding-bottom: 1px;">
+        <div class="container" style="max-width: 900px">
+            <div class="row check-availabilty" id="next">
+                <div class="block-32">
+                    <form action="#">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 mb-3 mb-lg-0 col-lg-12">
+                                <div class="search__container">
+                                    <input class="search__input" type="text" placeholder="Search for services" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Area for Desktop End -->
+
+    <!-- Search Area Mobile start -->
+    <section class="mobile-search-section d-sm-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row check-availabilt">
+                <div class="block-322 mt-2">
+                    <span class="mb-5 ion-ios-location-outline"></span>
+                    <span class="mb-5 text-uppercase font-bold">Kolkata,lake mall</span>
+                    <p class="mb-2 text-capitalize ml-3">lake mall,tandoor house,kol-70000</p>
+                    <form action="#" class="mt-2">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 mb-3 mb-lg-0 col-lg-12">
+                                <div class="search__container">
+                                    <input class="search__input" id="searchbox" type="text"
+                                        placeholder="Search for services" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Area Mobile End -->
+
+    <!-- Small Category For Mobile & Desktop Start -->
+    <section style="background-color:white;padding:1px 0;">
+        <div class="text-black font-bold text-20 capitalize" style="margin-bottom:16px"></div>
+        <div class=" flex flex-wrap bg-white   ">
+            <div class="w-3/12 relative " id="hs_teacher">
+                <a href="/details.html">
+                    <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                        <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                            style="border-radius:50%;background-color:#F7F7F7">
+                            <div class="h-3p w-3p relative" itemprop="image"
+                                style="background-image:url();background-size:440px;background-position:-68px -53px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                                <img src="./images/icons/colored-icons/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                            style="padding-top:6px;line-height:14px">Teacher</div>
+                    </div>
+                    <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                        class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style ">
+                        <div class="flex text-center hs-tag-txt font-semibold">Flat &nbsp;<b>25% Off</b></div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-3/12 relative " id="hs_dom_help">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-152px -52px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Domestic Help</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style ">
+                    <div class="flex text-center hs-tag-txt font-semibold">Upto&nbsp;<b>60% Off*</b></div>
+                </div>
+            </div>
+            <div class="w-3/12 relative " id="hs_business_at_home">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-67px -176px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Small Business</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style ">
+                    <div class="flex text-center hs-tag-txt font-semibold">Starts&nbsp;<b>@ ₹359</b></div>
+                </div>
+            </div>
+            <div class="w-3/12 relative " id="hs_rent">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-68px -112px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Rent</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style ">
+                    <div class="flex text-center hs-tag-txt font-semibold">Upto<!-- -->&nbsp;<b>30% Off*</b></div>
+                </div>
+            </div>
+            <div class="w-3/12 relative " id="hs_cleaning_service">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-323px -113px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Cleaning Service</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style "></div>
+            </div>
+            <div class="w-3/12 relative " id="hs_washing">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-324px -52px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Washing &amp; Laundry</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style ">
+                    <div class="flex text-center hs-tag-txt font-semibold">Lowest Quote*&nbsp;<b></b></div>
+                </div>
+            </div>
+            <div class="w-3/12 relative " id="blood_collection">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-238px -114px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Blood Collection</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style ">
+                    <div class="flex text-center hs-tag-txt font-semibold">Starts&nbsp;<b> @ ₹359</b></div>
+                </div>
+            </div>
+            <div class="w-3/12 relative " id="doctor">
+                <div class="rounded-xl flex flex-col items-center hs-box-dimension py-4">
+                    <div class="w-14 h-14 justify-center items-center flex hs-box-bg-clr "
+                        style="border-radius:50%;background-color:#F7F7F7">
+                        <div class="h-3p w-3p relative" itemprop="image"
+                            style="background-image:url();background-size:440px;background-position:-238px -114px;cursor:pointer;zoom:1.1;background-repeat:no-repeat">
+                            <img src="./images/icons/colored-icons/11.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="font-12 text-center px-2 hs-icon-clr  hs-service-name-clr "
+                        style="padding-top:6px;line-height:14px">Doctor</div>
+                </div>
+                <div style="top:5px;border:1px solid #ffffff;padding:0px 6px 0px 6px;border-radius:3px"
+                    class="flex justify-center mx-auto absolute left-0 right-0 hs-tag-style "></div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Small Category For Mobile & Desktop End -->
+
+    <!-- Offer For You Card Start-->
+    <section class="mb-0.6 d-sm-block d-lg-none" style="background-color:white;padding:20px 0 20px 16px;">
+        <div class="font-bold text-20 capitalize" style="margin-bottom:16px">Offers for you</div>
+        <div class="service-carousel-wrapper is-subhs">
+            <div class="banner-hs">
+                <div style="width:auto" class="horizontal-slider-wrapper">
+                    <div class="horizontal-slider-sub-wrapper">
+                        <div id="horizontal-slider-elements-container-"
+                            class="horizontal-slider-element service-undefined ">
+                            <div id="0" class="horizontal-slider-item " style="width:100%">
+                                <div class="card-item usp-card rounded-10"
+                                    style="height:150px;background-color:#eafdf8">
+                                    <div style="background-image:url(/images/card-offer/teacher.png);background-size:40%;background-position:center right"
+                                        class="usp-button-card-image h-full w-full flex items-center ml-auto bg-no-repeat">
+                                        <div class="usp-button-details w-60pe pl-3 whitespace-pre-line">
+                                            <h1 class="usp-button-details-header font-normal"
+                                                style="color:rgb(39, 103, 67);font-size:13px">Path Guider</h1>
+                                            <h1 class="usp-button-details-description font-bold text-15 pb-2.5"
+                                                style="color:rgb(39, 103, 67)">We provide professional Teachers</h1>
+                                            <button type="button"
+                                                style="color:rgb(39, 103, 67);padding:2px 10px;box-shadow:0 3px 6px #3636361a;border-radius:40px"
+                                                class="usp-button bg-white">Call Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="1" class="horizontal-slider-item " style="width:100%">
+                                <div class="card-item usp-card rounded-10"
+                                    style="height:150px;background-color:#222a68">
+                                    <div style="background-image:url(/images/card-offer/body-repair.png);background-size:40%;background-position:center right"
+                                        class="usp-button-card-image h-full w-full flex items-center ml-auto bg-no-repeat">
+                                        <div class="usp-button-details w-60pe pl-3 whitespace-pre-line">
+                                            <h1 class="usp-button-details-header font-normal"
+                                                style="color:rgb(232, 194, 42);font-size:13px">Car Repair</h1>
+                                            <h1 class="usp-button-details-description font-bold text-15 pb-2.5"
+                                                style="color:rgb(232, 194, 42)">60% off on Body Repair</h1>
+                                            <button type="button"
+                                                style="color:rgb(232, 194, 42);padding:2px 10px;box-shadow:0 3px 6px #3636361a;border-radius:40px"
+                                                class="usp-button bg-white">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="2" class="horizontal-slider-item " style="width:100%">
+                                <div class="card-item usp-card rounded-10"
+                                    style="height:150px;background-color:#d1f0b1">
+                                    <div style="background-image:url(/images/card-offer/house.png);background-size:40%;background-position:center right"
+                                        class="usp-button-card-image h-full w-full flex items-center ml-auto bg-no-repeat">
+                                        <div class="usp-button-details w-60pe pl-3 whitespace-pre-line">
+                                            <h1 class="usp-button-details-header font-normal"
+                                                style="color:rgb(85, 56, 155);font-size:13px">House rent
+                                            </h1>
+                                            <h1 class="usp-button-details-description font-bold text-15 pb-2.5"
+                                                style="color:rgb(85, 56, 155)">Lower then anything</h1>
+                                            <button type="button"
+                                                style="color:rgb(85, 56, 155);padding:2px 10px;box-shadow:0 3px 6px #3636361a;border-radius:40px"
+                                                class="usp-button bg-white">Book a Free Tour</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><span>
+                    <div class="slider-navigation-arrow-next is-subhs"><svg class="jss1 navigation-arrow"
+                            focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg></div>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- Offer For You Card End-->
+
+    <!-- Newly Added Start -->
+    <section class="mb-0\.8p" style=" padding: 20px 16px;">
+        <div class="text-black font-bold text-20 capitalize" style="margin-bottom: 16px;">Newly Added</div>
+        <div class="overflow-auto hide-scroll-bar">
+            <div class="flex gap-2">
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <a href="/details.html" class="text-black">
+                        <div class="none">
+                            <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                                style="background: rgb(254, 250, 250);">
+                                <img src="https://plus.unsplash.com/premium_photo-1667520463745-6548d6a8d3c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    loading="lazy" class="" alt="">
+                            </div>
+                            <div class="p-2 font-10 default-color">
+                                <div class="text-12 font-normal">AC Service</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1661876804729-7436306e9fdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Furniture Assambly</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1661664650046-149cf1c89448?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Bathroom Cleaning</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1664472731985-e844fcb9c7e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">House Painter</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1661502805069-9f8a2e0f729e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Spa for Women</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1544281679-a59fb2359715?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Laptop Repair</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 mt-2 mb-2">
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1598104358204-87cefc7c5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1209&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Nail Studio For Women</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Sofa Clean</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1595475693741-b445b025aec7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Hair Studio For Women</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1593699199342-59b40e08f0ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Car Repair</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1611396000732-f8c9a933424f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Mobile Repair</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">House Rent</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Newly Added End -->
+
+    <!-- Populer Service Start -->
+    <section class="mb-0\.8p" style=" padding: 20px 16px;">
+        <div class="text-black font-bold text-20 capitalize" style="margin-bottom: 16px;">Populer Service</div>
+        <div class="overflow-auto hide-scroll-bar">
+            <div class="flex gap-2">
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <a href="/details.html" class="text-black">
+                        <div class="none">
+                            <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                                style="background: rgb(254, 250, 250);">
+                                <img src="https://plus.unsplash.com/premium_photo-1667520463745-6548d6a8d3c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    loading="lazy" class="" alt="">
+                            </div>
+                            <div class="p-2 font-10 default-color">
+                                <div class="text-12 font-normal">AC Service</div>
+                                <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                                <div class="text-11 font-normal">₹699</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1661876804729-7436306e9fdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Furniture Assambly</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹699</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1661664650046-149cf1c89448?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Bathroom Cleaning</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹699</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1664472731985-e844fcb9c7e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">House Painter</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹699</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://plus.unsplash.com/premium_photo-1661502805069-9f8a2e0f729e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Spa for Women</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹699</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1544281679-a59fb2359715?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Laptop Repair</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹699</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Populer Service End -->
+    <!-- ========================CATEGORY SECTIONS START================================= -->
+
+    <!-- Category Teachers Start -->
+    <section class="mb-0.6 " style=" padding: 20px 16px;">
+        <div class="mb-4 pl-4">
+            <div class="flex justify-between">
+                <div class="font-bold text-20 text-default-color">Teachers</div>
+                <div class="text-14 font-semibold flex justify-end px-5 items-center justify-center"
+                    style="color: rgb(12, 184, 143);">See All<img class="h-1.4p w-1.4p ml-0.2p"
+                        src="https://assets.nobroker.in/nb-new/public/Home/arrowRightGreen.svg"
+                        alt="greena-arrow-right"></div>
+            </div>
+        </div>
+        <div class="flex gap-2 overflow-auto hide-scroll-bar">
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <a class="text-black" href="/details.html">
+                    <div class="none">
+                        <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="./images/category_images/tec-1.jpeg" loading="lazy" class="pt-3" alt="">
+                        </div>
+                        <div class="p-3 font-14 default-color">
+                            <div class="text-16 font-bold text-16">English Teacher <span>
+                                </span></div>
+                            <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="./images/category_images/tec2.jpeg" loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Music Teacher <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="./images/category_images/tec3.jpeg" loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Dance Teacher <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="./images/category_images/tec6.jpeg" loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">All Subject <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Category Teachers End -->
+
+    <!-- Domestic Help Start -->
+    <section class="mb-0.6 " style=" padding: 20px 16px;">
+        <div class="mb-4 pl-4">
+            <div class="flex justify-between">
+                <div class="font-bold text-20 text-default-color">Domestic Help</div>
+                <div class="text-14 font-semibold flex justify-end px-5 items-center justify-center"
+                    style="color: rgb(12, 184, 143);">See All<img class="h-1.4p w-1.4p ml-0.2p"
+                        src="https://assets.nobroker.in/nb-new/public/Home/arrowRightGreen.svg"
+                        alt="greena-arrow-right"></div>
+            </div>
+        </div>
+        <div class="flex gap-2 overflow-auto hide-scroll-bar">
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <a class="text-black" href="/details.html">
+                    <div class="none">
+                        <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1636647511729-6703539ba71f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="pt-3" alt="">
+                        </div>
+                        <div class="p-3 font-14 default-color">
+                            <div class="text-16 font-bold text-16">Cooking <span>
+                                </span></div>
+                            <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://plus.unsplash.com/premium_photo-1675937428940-6f0ddd4ce5c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Floor Clean <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1083&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Aya <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src=" https://images.unsplash.com/photo-1526635090919-b5d79657c5a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Old Age Care <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Domestic Help End -->
+    <!-- ========================CATEGORY SECTIONS END================================= -->
+
+
+    <!-- Small Category For Mobile & Desktop Start(More Services) -->
+
+    <div style="border-top: 5px solid rgb(242, 242, 242);">
+        <div class="bg-white py-5">
+            <div class="mb-4 pl-4">
+                <div class="flex justify-between">
+                    <div class="font-bold text-18 text-default-color">More Services</div>
+                    <div class="text-14 font-semibold flex justify-end px-5 items-center justify-center"
+                        style="color: rgb(12, 184, 143);">See All<img class="h-1.4p w-1.4p ml-0.2p"
+                            src="https://assets.nobroker.in/nb-new/public/Home/arrowRightGreen.svg"
+                            alt="greena-arrow-right"></div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-y-2.5">
+                <div class="px-1 relative" style="width: 25%;">
+                    <a href="/details.html" class="text-black">
+                        <div class="rounded-xl flex flex-col items-center h-full py-2"
+                            style="border: 1px solid rgb(235, 235, 235);">
+                            <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                                <div class="w-full h-full">
+                                    <img src="./images/icons/colored-icons/7.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text-12 text-center px-2 pt-4 font-semibold">Bike & Car Garage</div>
+                        </div>
+                        <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                            style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                            <div class="flex text-center font-medium text-10"
+                                style="line-height: 14px; color: rgb(75, 75, 75);">New Offers</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Driver</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);">Upto 50% off</div>
+                    </div>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Physiotherapist</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);">Upto 60% off</div>
+                    </div>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/12.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Cook Servent</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);"></div>
+                    </div>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/15.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Catering Service</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);"></div>
+                    </div>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/14.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Salon&amp; Spa</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);"></div>
+                    </div>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Electrician</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);"></div>
+                    </div>
+                </div>
+                <div class="px-1 relative" style="width: 25%;">
+                    <div class="rounded-xl flex flex-col items-center h-full py-2"
+                        style="border: 1px solid rgb(235, 235, 235);">
+                        <div class="w-14 h-12 justify-center items-center flex rounded-full relative">
+                            <div class="w-full h-full">
+                                <img src="./images/icons/colored-icons/22.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-12 text-center px-2 pt-4 font-semibold">Home Delivery</div>
+                    </div>
+                    <div class="flex justify-center px-2 rounded-lg mx-auto absolute left-0 right-0"
+                        style="top: -7px; background: rgb(250, 232, 203); width: fit-content;"><img src="" alt="">
+                        <div class="flex text-center font-medium text-10"
+                            style="line-height: 14px; color: rgb(75, 75, 75);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Small Category For Mobile & Desktop End -->
+
+
+
+    <!-- ========================CATEGORY SECTIONS START================================= -->
+
+    <!-- Business At Home Start -->
+    <section class="mb-0.6 " style=" padding: 20px 16px;">
+        <div class="mb-4 pl-4">
+            <div class="flex justify-between">
+                <div class="font-bold text-20 text-default-color">Business At Home</div>
+                <div class="text-14 font-semibold flex justify-end px-5 items-center justify-center"
+                    style="color: rgb(12, 184, 143);">See All<img class="h-1.4p w-1.4p ml-0.2p"
+                        src="https://assets.nobroker.in/nb-new/public/Home/arrowRightGreen.svg"
+                        alt="greena-arrow-right"></div>
+            </div>
+        </div>
+        <div class="flex gap-2 overflow-auto hide-scroll-bar">
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <a class="text-black" href="/details.html">
+                    <div class="none">
+                        <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1605754452467-fda400b4c8f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                loading="lazy" class="pt-3" alt="">
+                        </div>
+                        <div class="p-3 font-14 default-color">
+                            <div class="text-16 font-bold text-16">Cake Making <span>
+                                    <!-- <img src="./images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                            height="18"> -->
+                                </span></div>
+                            <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://images.unsplash.com/photo-1517840545241-b491010a8af4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Hand Made <span>
+                                <!-- <img src="./images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                        height="18"> -->
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Garment Business<span>
+                                <!-- <img src="./images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                        height="18"> -->
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Baby Sitting<span>
+                                <!-- <img src="./images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                        height="18"> -->
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Business At Home End -->
+
+    <!-- Salon & Spa Start -->
+    <section class="mb-0.6 " style=" padding: 20px 16px;">
+        <div class="mb-4 pl-4">
+            <div class="flex justify-between">
+                <div class="font-bold text-20 text-default-color">Salon & Spa</div>
+                <div class="text-14 font-semibold flex justify-end px-5 items-center justify-center"
+                    style="color: rgb(12, 184, 143);">See All<img class="h-1.4p w-1.4p ml-0.2p"
+                        src="https://assets.nobroker.in/nb-new/public/Home/arrowRightGreen.svg"
+                        alt="greena-arrow-right"></div>
+            </div>
+        </div>
+        <div class="flex gap-2 overflow-auto hide-scroll-bar">
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <a class="text-black" href="/details.html">
+                    <div class="none">
+                        <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1488282396544-0212eea56a21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                loading="lazy" class="pt-3" alt="">
+                        </div>
+                        <div class="p-3 font-14 default-color">
+                            <div class="text-16 font-bold text-16">Hair Color <span>
+
+                                </span></div>
+                            <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Face Care <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src="https://plus.unsplash.com/premium_photo-1661382028468-38612d62a254?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Beard Grooming <span>
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-md justify-evenly flex mn__width__170"
+                style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                        style="background: rgb(254, 250, 250);">
+                        <img src=" https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            loading="lazy" class="pt-3" alt="">
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">Massage Therapy <span>
+
+                            </span></div>
+                        <!-- <div class="text-14 text-gray-400 ">Connect Us</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Salon & Spa End -->
+    <!-- ========================CATEGORY SECTIONS END================================= -->
+    <!-- Best Deals Start -->
+    <section class="mb-0\.8p" style=" padding: 20px 16px;">
+        <div class="text-black font-bold text-20 capitalize" style="margin-bottom: 16px;">Best Deals</div>
+        <div class="overflow-auto hide-scroll-bar">
+            <div class="flex gap-2">
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <a class="text-black" href="/details.html">
+                        <div class="none">
+                            <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                                style="background: rgb(254, 250, 250);">
+                                <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                    loading="lazy" class="" alt="">
+                            </div>
+                            <div class="p-2 font-10 default-color">
+                                <div class="text-12 font-normal">House Rent</div>
+                                <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                                <div class="text-11 font-normal">₹2599/month</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1649789261044-0c6a9fb528ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Gym & Yoga</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹1000/month</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1512908390106-b1af96afe5cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Home Delivery</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹100/Day</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1524824267900-2fa9cbf7a506?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Catering</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹2000/Day</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Product Resale</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹1000/Product</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md justify-evenly flex mn__width__100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px;">
+                    <div class="none">
+                        <div class="rounded-t-md  flex justify-center items-center  overflow-hidden"
+                            style="background: rgb(254, 250, 250);">
+                            <img src="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                loading="lazy" class="" alt="">
+                        </div>
+                        <div class="p-2 font-10 default-color">
+                            <div class="text-12 font-normal">Car Garage</div>
+                            <div class="text-11 font-normal ion-android-star">4.79(97.6k)</div>
+                            <div class="text-11 font-normal">₹599/Month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Deals End -->
+
+    <!-- single card start -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 text-center mb-4">
+                    <img src="images/card-img/large-card-1.png" alt="" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- single card end -->
+
+
+    <!-- Discount deal start for Mobile -->
+    <section class="section d-sm-block d-xs-block d-md-none d-lg-none bg-dotted">
+        <div class="mb-4 text-32 font-semibold text-center" style="color:#1F205F !important">Biggest Home Festive
+            Discount
+            Deals</div>
+        <div class="mx-2 grid grid-cols-2 gap-3" style="gap: 12px !important">
+            <div class="bg-white rounded-lg" style="box-shadow: 0 4px 10px #0000001f;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md flex justify-center items-center overflow-hidden p-4"
+                        style="background: #fffdf4">
+                        <img src="/images/icons/offer/offer-1.png" loading="lazy" width="120" height="120" class="pt-3"
+                            alt="" />
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">
+                            Home Painting
+                            <span><img src="/images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                    height="18" /></span>
+                        </div>
+                        <div class="text-14 text-gray-400">Flat 25% off</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg" style="box-shadow: 0 4px 10px #0000001f;">
+                <div class="none">
+                    <div class="h-28 rounded-t-md flex justify-center items-center overflow-hidden p-4"
+                        style="background: #fffdf4">
+                        <img src="/images/icons/offer/offer-3.png" loading="lazy" width="120" height="120" class="pt-3"
+                            alt="" />
+                    </div>
+                    <div class="p-3 font-14 default-color">
+                        <div class="text-16 font-bold text-16">
+                            House Cleaning
+                            <span><img src="/images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                    height="18" /></span>
+                        </div>
+                        <div class="text-14 text-gray-400">Upto 50% off</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white grid col-span-2 rounded-lg" style="box-shadow: 0 4px 10px #0000001f;">
+                <div class="flex" style="height: 116px">
+                    <div class="w-45pe rounded-lg h-full flex justify-center items-center overflow-hidden p-4"
+                        style="background: #fffdf4">
+                        <img src="/images/icons/offer/offer-2.png" loading="lazy" width="120" height="120" class="pt-3"
+                            alt="" />
+                    </div>
+                    <div class="p-3 flex items-center font-14 default-color">
+                        <div>
+                            <div class="text-16 font-bold text-16">
+                                Car Repairs
+                                <span><img src="/images/icons/offer/curved-right.svg" loading="lazy" alt="arrow"
+                                        width="18" height="18" /></span>
+                            </div>
+                            <div class="text-14 text-gray-400">
+                                Get all broken things fixed
+                            </div>
+                            <div class="text-14 text-gray-400 break-all">
+                                Starting @ ₹99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Discount deal end for Mobile -->
+    <!-- Discount deal start for Desktop -->
+    <section class="section d-none d-md-block d-lg-block bg-dotted">
+        <div class="mb-4 text-32 font-semibold text-center" style="color:#1F205F !important">Biggest Home Festive
+            Discount
+            Deals</div>
+        <div style="max-width:1280px" class="m-auto px-14p">
+            <div class="grid grid-cols-10 gap-3" style="gap:20px !important">
+                <div class="bg-white rounded-lg row-span-5 col-span-6" style="box-shadow:0 4px 10px #0000001F;">
+                    <div class="none flex ">
+                        <div class="h-40 w-50pe rounded-t-md  flex justify-center items-center  overflow-hidden p-4"
+                            style="background:#FFFDF4">
+                            <img src="/images/icons/offer/offer-1.png" loading="lazy" width="150" height="150"
+                                class="pt-3" alt="">
+                        </div>
+                        <div class="w-50pe text-left  flex flex-col p-3 justify-center font-14 default-color">
+                            <div class="text-24 font-bold text-16">Home Painting<!-- --> <span><img
+                                        src="/images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                        height="18"></span>
+                            </div>
+                            <div class="text-16 text-gray-400 ">Flat 25% off</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg col-span-4"
+                    style="box-shadow:0 4px 10px #0000001F;grid-row:span 10 / span 10">
+                    <div class="none flex flex-col">
+                        <div class="h-56 w-100pe rounded-t-md  flex justify-center items-center  overflow-hidden p-4
+        " style="background:#FFFDF4"><img src="/images/icons/offer/offer-3.png" loading="lazy" width="190" height="190"
+                                class="pt-3" alt=""></div>
+                        <div class="w-100pe text-left p-8 flex flex-col justify-center font-14 default-color">
+                            <div class="text-24 font-bold text-16">House Cleaning<!-- --> <span><img
+                                        src="/images/icons/offer/curved-right.svg" loading="lazy" alt="arrow" width="18"
+                                        height="18"></span>
+                            </div>
+                            <div class="text-16 text-gray-400 ">Upto 50% off</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg row-span-5 col-span-6" style="box-shadow:0 4px 10px #0000001F;">
+                    <div class="flex flex ">
+                        <div class="w-45pe rounded-lg  h-full flex justify-center items-center  overflow-hidden p-4
+        " style="background:#FFFDF4"><img src="/images/icons/offer/offer-2.png" loading="lazy" width="150" height="150"
+                                class="pt-3" alt=""></div>
+                        <div class="p-3 flex items-center font-14 default-color">
+                            <div>
+                                <div class="text-24 font-bold text-16">Car Repairs<!-- --> <span><img
+                                            src="/images/icons/offer/curved-right.svg" loading="lazy" alt="arrow"
+                                            width="18" height="18"></span></div>
+                                <div class="text-16 text-gray-400">Get all broken things fixed</div>
+                                <div class="text-16 text-gray-400 break-all">Starting @ ₹99</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Discount deal end for Desktop -->
+    <!-- Footer section start -->
+    <footer class="section footer-section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 col-lg-4 col-sm-4 mb-5">
+                    <ul class="list-unstyled link">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Other Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 mb-5">
+                    <ul class="list-unstyled link">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 mb-5 pr-md-5 contact-info">
+                    <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
+                    <p>
+                        <span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span>
+                        <span>
+                            198 West 21th Street, <br />
+                            Suite 721 New York NY 10016</span>
+                    </p>
+                    <p>
+                        <span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span>
+                        <span> (+1) 435 3533</span>
+                    </p>
+                    <p>
+                        <span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span>
+                        <span> info@domain.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <p class="col-md-6 text-left">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="icon-heart-o" aria-hidden="true"></i> by
+                    <a href="https://bataitech.com" target="_blank">Bataitech</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+
+                <p class="col-md-6 text-right social">
+                    <a href="#"><span class="fa fa-facebook"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-youtube"></span></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script src="js/aos.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+
+    <script src="js/main.js"></script>
+   <script>
+    let burger = document.getElementById('burger'),
+nav = document.getElementById('main-nav');
+
+burger.addEventListener('click', function (e) {
+  console.log("Clicked");
+this.classList.toggle('is-open');
+nav.classList.toggle('is-open');
+});
+   </script>
+</body>
+
+</html>
